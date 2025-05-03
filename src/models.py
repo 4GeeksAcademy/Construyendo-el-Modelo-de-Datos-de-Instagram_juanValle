@@ -15,8 +15,8 @@ user_planet_association =db.Table(
         'planets.id'), primary_key=True),
               
 )
-
-user_warrior_association =db.Table(
+       
+user_warrior_association =db.Table( 
     'user_warrior',
     db.Column('user_id', Integer, db.ForeignKey(
         'users.id'), primary_key=True),
@@ -35,8 +35,6 @@ user_spaceship_association =db.Table(
         'spaceships.id'), primary_key=True),
               
 )
-
-
 
 
 class User(db.Model):
